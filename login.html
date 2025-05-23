@@ -1,0 +1,31 @@
+<!-- login.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Login - Frijolito y Garbanzo</title>
+</head>
+<body>
+  <h2>Iniciar Sesión</h2>
+  <form onsubmit="return login()">
+    <input type="text" id="usuario" placeholder="Usuario" required><br><br>
+    <input type="password" id="clave" placeholder="Contraseña" required><br><br>
+    <button type="submit">Entrar</button>
+  </form>
+
+  <script>
+    function login() {
+      const user = document.getElementById('usuario').value;
+      const pass = document.getElementById('clave').value;
+
+      if (user === "admin" && pass === "1234") {
+        localStorage.setItem("isAdmin", "true");
+        window.location.href = "PaginaPrincipal.html"; // Redirige a la página principal
+      } else {
+        alert("Usuario o contraseña incorrectos");
+      }
+      return false;
+    }
+  </script>
+</body>
+</html>

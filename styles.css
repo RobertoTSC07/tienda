@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fefefe;
+}
+
+/* Header superior */
+.top-banner {
+    background-color: #f16060;
+    text-align: center;
+    padding: 15px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color:  #f8f8f8;
+}
+
+/* Layout */
+.container {
+    display: flex;
+    min-height: calc(100vh - 100px); /* Ajuste considerando el footer */
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background-color: #ffb84d;
+    padding: 20px;
+    color: #fff;
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.logo img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.logo h2 {
+    font-size: 1.2rem;
+    color: white;
+    font-weight: bold;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    display: block;
+    padding: 5px 0;
+}
+
+.sidebar a:hover {
+    color: #ec4141;
+    background-color: #ffe0b2;
+    padding-left: 10px;
+    border-radius: 5px;
+}
+
+.section-title {
+    font-size: 0.9rem;
+    color: #fff3d1;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Contenido */
+main.contenido {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+    background-color: #fefefe;
+}
+
+/* Fondo tipo marca de agua */
+.fondo-logo {
+    position: relative;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    overflow: hidden;
+}
+
+.fondo-logo::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    height: 80%;
+    background-image: url("imagenes/logo.png"); /* Ruta relativa */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    opacity: 0.15; /* Más visible como marca de agua */
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
+
+.fondo-logo h1 {
+    z-index: 1;
+    text-align: center;
+    font-size: 2.5rem;
+    color: #ff6600;
+    background-color: rgba(255, 255, 255, 0.6); /* Fondo semitransparente detrás del texto */
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    position: relative;
+}
+
+/* Footer */
+footer {
+    background-color: #ec4141;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: #ffffff;
+}

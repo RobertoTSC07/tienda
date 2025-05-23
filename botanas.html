@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Botanas - Frijolito y Garbanzo</title>
+  <link rel="stylesheet" href="botanas.css" />
+  <style>
+    .precios {
+      display: none;
+      margin-top: 10px;
+      background-color: #f8f8f8;
+      padding: 10px;
+      border-radius: 5px;
+      font-size: 0.9rem;
+      color: #333;
+    }
+    .card {
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header class="top-banner">
+    <p>“El Antojo Perfecto, Siempre a tu Alcance”</p>
+  </header>
+
+  <div class="container">
+    <nav class="sidebar">
+      <div class="logo">
+        <img src="C:\Users\Roberto Torres\Desktop\FyG\imagenes\logo.png" alt="Logo" />
+        <h2>FRIJOLITO Y GARBANZO</h2>
+      </div>
+
+      <ul class="menu">
+        <li><a href="Pagina_Principal.html"><i class="icon">🏠</i> Página Principal</a></li>
+        <hr />
+        <li class="section-title">MENÚ</li>
+        <li><a href="dulces.html"><i class="icon">🍬</i> Dulces</a></li>
+        <li><a href="botanas.html" class="active"><i class="icon">🥜</i> Botanas</a></li>
+        <li><a href="cereales.html"><i class="icon">🌾</i> Cereales</a></li>
+        <hr />
+        <li class="section-title">SERVICIOS</li>
+        <li><a href="domicilio.html"><i class="icon">🚚</i> Servicio a Domicilio</a></li>
+        <li><a href="mesa.html"><i class="icon">🍽️</i> Mesa de Dulces</a></li>
+        <hr />
+      </ul>
+    </nav>
+
+    <main class="contenido">
+      <h1>BOTANAS</h1>
+      <div class="product-grid">
+        <div class="card" onclick="togglePrecios(this)">
+          <img src="C:\Users\Roberto Torres\Desktop\FyG\imagenes\palomitas.jpeg" alt="Palomitas" />
+          <div class="card-text">Palomitas con mantequilla</div>
+          <div class="precios">Precios: (por agregar)</div>
+        </div>
+        <div class="card" onclick="togglePrecios(this)">
+          <img src="C:\Users\Roberto Torres\Desktop\FyG\imagenes\papitas.jpeg" alt="Papitas" />
+          <div class="card-text">Churros crujientes con chile</div>
+          <div class="precios">Precios: (por agregar)</div>
+        </div>
+        <div class="card" onclick="togglePrecios(this)">
+          <img src="C:\Users\Roberto Torres\Desktop\FyG\imagenes\cacahuates.jpeg" alt="Cacahuates" />
+          <div class="card-text">Cacahuates Botaneros</div>
+          <div class="precios">Precios: (por agregar)</div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Frijolito y Garbanzo. Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    function togglePrecios(card) {
+      const precios = card.querySelector(".precios");
+      precios.style.display = precios.style.display === "block" ? "none" : "block";
+    }
+  </script>
+</body>
+</html>
