@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Frijolito y Garbanzo</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="top-banner">
+    <p>“El Antojo Perfecto, Siempre a tu Alcance”</p>
+  </header>
+
+  <div class="container">
+    <nav class="sidebar">
+      <div class="logo">
+        <img src="C:\Users\Roberto Torres\Desktop\FyG\imagenes\logo.png" alt="Logo" />
+        <h2>FRIJOLITO Y GARBANZO</h2>
+      </div>
+
+      <ul class="menu">
+        <li><a href="index.html" class="active"><i class="icon">🏠</i> Página Principal</a></li>
+        <hr />
+        <li class="section-title">MENÚ</li>
+        <li><a href="dulces.html"><i class="icon">🍬</i> Dulces</a></li>
+        <li><a href="botanas.html"><i class="icon">🥜</i> Botanas</a></li>
+        <li><a href="cereales.html"><i class="icon">🌾</i> Cereales</a></li>
+        <li><a href="otros.html"><i class="icon">📦</i> Otros</a></li>
+        <hr />
+        <li class="section-title">SERVICIOS</li>
+        <li><a href="domicilio.html"><i class="icon">🚚</i> Servicio a Domicilio</a></li>
+        <li><a href="mesa_dulces.html"><i class="icon">🍽️</i> Mesa de Dulces</a></li>
+        <hr />
+      </ul>
+    </nav>
+
+    <button id="editarBtn" style="display: none;">Editar Contenido</button>
+    <script>
+      if (localStorage.getItem("isAdmin") === "true") {
+        document.getElementById("editarBtn").style.display = "inline-block";
+      }
+    </script>
+
+    <main class="contenido fondo-logo">
+      <h1>¡Bienvenidos a Frijolito y Garbanzo!</h1>
+    </main>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Frijolito y Garbanzo. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>

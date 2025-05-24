@@ -1,0 +1,121 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+}
+
+.top-banner {
+  background-color: #e74c3c; /* Rojo del diseño original */
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 1.2rem;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  width: 250px;
+  background-color: #444; /* Gris oscuro visible */
+  color: white;
+  height: 100vh;
+  position: fixed;
+  overflow-y: auto;
+}
+
+.sidebar .logo {
+  text-align: center;
+  padding: 20px;
+}
+
+.sidebar .logo img {
+  width: 80px;
+  border-radius: 50%;
+}
+
+.sidebar h2 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.sidebar .menu {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar .menu li {
+  padding: 15px 20px;
+}
+
+.sidebar .menu li a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar .menu li i.icon {
+  margin-right: 10px;
+}
+
+.sidebar .menu .active {
+  background-color: #c0392b; /* Rojo de selección */
+}
+
+/* Main Content */
+.contenido {
+  margin-left: 250px;
+  padding: 20px;
+  flex: 1;
+}
+
+.contenido h1 {
+  color: #333;
+  font-size: 2rem;
+}
+
+.contenido p {
+  margin-bottom: 20px;
+  color: #555;
+}
+
+/* Table Styles */
+.tabla-dulces {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: white;
+}
+
+.tabla-dulces th, .tabla-dulces td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.tabla-dulces th {
+  background-color: #e74c3c; /* Rojo encabezado */
+  color: white;
+  font-weight: bold;
+}
+
+.tabla-dulces tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: #e74c3c; /* Rojo del diseño */
+  color: white;
+  padding: 10px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}

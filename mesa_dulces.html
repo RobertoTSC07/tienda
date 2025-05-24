@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mesa de Dulces - Frijolito y Garbanzo</title>
+  <link rel="stylesheet" href="dulces.css" />
+  <style>
+    .tabla-dulces {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    .tabla-dulces th,
+    .tabla-dulces td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: left;
+    }
+
+    .tabla-dulces th {
+      background-color: #f4f4f4;
+      font-weight: bold;
+    }
+
+    .tabla-dulces tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    .tabla-dulces tr:hover {
+      background-color: #f1f1f1;
+    }
+  </style>
+</head>
+<body>
+  <header class="top-banner">
+    <p>“El Antojo Perfecto, Siempre a tu Alcance”</p>
+  </header>
+
+  <div class="container">
+    <nav class="sidebar">
+      <div class="logo">
+        <img src="imagenes/logo.png" alt="Logo" />
+        <h2>FRIJOLITO Y GARBANZO</h2>
+      </div>
+
+      <ul class="menu">
+        <li><a href="index.html"><i class="icon">🏠</i> Página Principal</a></li>
+        <hr />
+        <li class="section-title">MENÚ</li>
+        <li><a href="dulces.html"><i class="icon">🍬</i> Dulces</a></li>
+        <li><a href="botanas.html"><i class="icon">🥜</i> Botanas</a></li>
+        <li><a href="cereales.html"><i class="icon">🌾</i> Cereales</a></li>
+        <li><a href="otros.html"><i class="icon">📦</i> Otros</a></li>
+        <hr />
+        <li class="section-title">SERVICIOS</li>
+        <li><a href="domicilio.html"><i class="icon">🚚</i> Servicio a Domicilio</a></li>
+        <li><a href="mesa_dulces.html" class="active"><i class="icon">🍽️</i> Mesa de Dulces</a></li>
+        <hr />
+      </ul>
+    </nav>
+
+    <main class="contenido">
+      <h1>Mesa de Dulces</h1>
+      <p>Consulta los productos disponibles y sus precios:</p>
+      <table class="tabla-dulces">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Producto</th>
+            <th>Cantidad</th>
+            <th>Precio</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Chocolates</td>
+            <td>20</td>
+            <td>$150</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Gomitas</td>
+            <td>15</td>
+            <td>$120</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Charola Variada</td>
+            <td>10</td>
+            <td>$250</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Frijolito y Garbanzo. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
